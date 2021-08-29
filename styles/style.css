@@ -1,0 +1,206 @@
+/* Mobile-portrait */
+
+/********** Root **********/
+:root {
+  --color-1: #fae5e1; /**/
+  --color-15: rgb(242, 191, 181);
+  --color-2: #ea9c8a; /**/
+  --color-3: #db5234; /**/
+  --color-4: #8f2f19; /**/
+  --color-5: #2e150f; /**/
+}
+
+/********** Body **********/
+body {
+  color: var(--color-4);
+  background-color: var(--color-1);
+  font-family: "Computer Modern Serif", serif;
+  line-height: 1.5;
+}
+
+/********** Header **********/
+
+/********** Navigation Bar **********/
+#navbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 245px;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid;
+  border-color: var(--color-4);
+  background-color: var(--color-3);
+}
+
+#navbar header {
+  margin: 10px;
+  color: var(--color-5);
+  text-align: center;
+}
+
+#navbar ul {
+  height: 180px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid;
+  background-color: var(--color-2);
+  overflow-y: auto;
+}
+
+#navbar li {
+  border-top: 1px solid;
+  color: var(--color-4);
+  list-style: none;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: var(--color-5);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/********** Main **********/
+#main-doc {
+  position: relative;
+  padding: 20px;
+  margin-top: 250px;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+section li {
+  margin-top: 15px;
+}
+
+header {
+  font-size: 2em;
+}
+
+code {
+  padding: 3px;
+  border-radius: 5px;
+  color: var(--color-5);
+  background-color: var(--color-15);
+}
+
+pre {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--color-15);
+  line-height: 2;
+  overflow-x: auto;
+}
+
+pre code {
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/********** Footer **********/
+
+/************************************************** Medias **************************************************/
+
+/* Mobile-landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /********** Root **********/
+
+  /********** Body **********/
+
+  /********** Header **********/
+
+  /********** Navigation Bar **********/
+
+  /********** Main **********/
+
+  /********** Footer **********/
+}
+
+/* Tablet-portrait */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /********** Root **********/
+
+  /********** Body **********/
+
+  /********** Header **********/
+
+  /********** Navigation Bar **********/
+
+  /********** Main **********/
+
+  /********** Footer **********/
+}
+
+/* Tablet-landscape */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /********** Root **********/
+
+  /********** Body **********/
+
+  /********** Header **********/
+
+  /********** Navigation Bar **********/
+  #navbar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    border-right: 2px solid;
+  }
+
+  #navbar ul {
+    height: 585px;
+  }
+
+  /********** Main **********/
+  #main-doc {
+    margin-top: 0;
+    margin-left: 310px;
+  }
+
+  /********** Footer **********/
+}
+
+/* Laptops and desktops */
+@media only screen and (min-width: 1200px) {
+  /********** Root **********/
+
+  /********** Body **********/
+
+  /********** Header **********/
+
+  /********** Navigation Bar **********/
+  #navbar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    border-right: 2px solid;
+  }
+
+  #navbar ul {
+    height: 585px;
+  }
+
+  /********** Main **********/
+  #main-doc {
+    margin-top: 0;
+    margin-left: 310px;
+  }
+
+  /********** Footer **********/
+}
